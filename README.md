@@ -1,2 +1,2 @@
-Simple Infnite ListView
+Simple Infinite ListView
 =======================
