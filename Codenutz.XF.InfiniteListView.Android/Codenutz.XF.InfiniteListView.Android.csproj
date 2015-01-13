@@ -86,8 +86,13 @@
     <Content Include="Properties\AndroidManifest.xml" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Codenutz.XF.InfiniteListView\Codenutz.XF.InfiniteListView.csproj">
-      <Name>Codenutz.XF.InfiniteListView</Name>
+    <ProjectReference Include="..\Codenutz.XF.Controls.InfiniteListView\Codenutz.XF.Controls.InfiniteListView.csproj">
+      <Project>{67f9d3a8-f71e-4428-913f-c37ae82cdb24}</Project>
+      <Name>Codenutz.XF.Controls.InfiniteListView</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Codenutz.XF.InfiniteListView.Shared\Codenutz.XF.InfiniteListView.Shared.csproj">
+      <Project>{22e19ae6-b890-4a31-a304-b3e2f86099ee}</Project>
+      <Name>Codenutz.XF.InfiniteListView.Shared</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />

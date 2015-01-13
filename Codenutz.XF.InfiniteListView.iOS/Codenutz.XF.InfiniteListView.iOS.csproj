@@ -84,11 +84,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Codenutz.XF.InfiniteListView\Codenutz.XF.InfiniteListView.csproj">
-      <Name>Codenutz.XF.InfiniteListView</Name>
+    <ProjectReference Include="..\Codenutz.XF.InfiniteListView.Shared\Codenutz.XF.InfiniteListView.Shared.csproj">
+      <Project>{22e19ae6-b890-4a31-a304-b3e2f86099ee}</Project>
+      <Name>Codenutz.XF.InfiniteListView.Shared</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
