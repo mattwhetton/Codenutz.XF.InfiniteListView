@@ -13,10 +13,13 @@ namespace Codenutz.XF.InfiniteListView
 	{
 		public static Page GetMainPage()
 		{
-			return new NavigationPage(new InfiniteListViewSampleView()
-			{
-				BindingContext = new InfiniteListViewSampleViewModel(new ComicCharacterRepository())
-			});
+			var sampleView = new InfiniteListViewSampleView();
+
+			var sampleViewModel = new InfiniteListViewSampleViewModel(new ComicCharacterRepository(), sampleView.Navigation);
+
+			sampleView.BindingContext = sampleViewModel;
+
+			return new NavigationPage(sampleView);
 		}
 	}
 }
