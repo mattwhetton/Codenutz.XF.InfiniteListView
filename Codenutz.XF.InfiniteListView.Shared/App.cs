@@ -9,17 +9,19 @@ using Xamarin.Forms;
 
 namespace Codenutz.XF.InfiniteListView
 {
-	public class App
+	public class App : Application
 	{
-		public static Page GetMainPage()
+
+		public App()
 		{
+			var x = new Controls.InfiniteListView();
 			var sampleView = new InfiniteListViewSampleView();
 
 			var sampleViewModel = new InfiniteListViewSampleViewModel(new ComicCharacterRepository(), sampleView.Navigation);
 
 			sampleView.BindingContext = sampleViewModel;
 
-			return new NavigationPage(sampleView);
+			MainPage = new NavigationPage(sampleView);
 		}
 	}
 }
