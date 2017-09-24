@@ -16,8 +16,7 @@ namespace Codenutz.XF.Controls
 		/// <summary>
 		/// Respresents the command that is fired to ask the view model to load additional data bound collection.
 		/// </summary>
-		public static readonly BindableProperty LoadMoreCommandProperty = BindableProperty.Create<InfiniteListView, ICommand>(bp => bp.LoadMoreCommand, default(ICommand));
-
+		public static readonly BindableProperty LoadMoreCommandProperty = BindableProperty.Create(nameof(LoadMoreCommandProperty), typeof(ICommand), typeof(InfiniteListView), default(ICommand));
 		/// <summary>
 		/// Gets or sets the command binding that is called whenever the listview is getting near the bottomn of the list, and therefore requiress more data to be loaded.
 		/// </summary>
